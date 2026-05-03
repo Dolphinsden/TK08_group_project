@@ -24,7 +24,28 @@ float division(float a, float b) {
     return hasil;
 }
 
-void printHasil(float a) {}
+void printHasil(float angka1, float angka2, float hasil, int choice) {
+     switch (choice) {
+        case 1:
+            printf("%f ditambah dengan %f adalah %f", angka1, angka2, hasil);
+            break;
+            
+        case 2:
+            printf("%f dikurang dengan %f adalah %f", angka1, angka2, hasil);
+            break;
+            
+        case 3:
+            printf("%f dikali dengan %f adalah %f", angka1, angka2, hasil);
+            break;
+
+        case 4:
+            printf("%f dibagi dengan %f adalah %f", angka1, angka2, hasil);
+            break;
+            
+        default:
+            break;
+        }
+}
 
 int main() {
     int choice;
@@ -65,7 +86,7 @@ int main() {
                 break;
             }
         
-        printHasil(hasil);
+        printHasil(angka1, angka2, hasil, choice);
     } while (1);
 
     return 0;
