@@ -18,7 +18,11 @@ float multiplication(float a, float b) {
     return hasil;
 }
 
-float division(float a, float b) {}
+float division(float a, float b) {
+    float hasil = a/b;
+
+    return hasil;
+}
 
 void printHasil(float a) {}
 
