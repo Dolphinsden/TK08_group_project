@@ -8,6 +8,8 @@ float multiplication(float a, float b) {}
 
 float division(float a, float b) {}
 
+void printHasil(float a) {}
+
 int main() {
     int choice;
     float angka1, angka2;
