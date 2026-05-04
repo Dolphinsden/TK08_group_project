@@ -27,19 +27,19 @@ float division(float a, float b) {
 void printHasil(float angka1, float angka2, float hasil, int choice) {
      switch (choice) {
         case 1:
-            printf("%f ditambah dengan %f adalah %f", angka1, angka2, hasil);
+            printf("%f ditambah dengan %f adalah %f\n", angka1, angka2, hasil);
             break;
             
         case 2:
-            printf("%f dikurang dengan %f adalah %f", angka1, angka2, hasil);
+            printf("%f dikurang dengan %f adalah %f\n", angka1, angka2, hasil);
             break;
             
         case 3:
-            printf("%f dikali dengan %f adalah %f", angka1, angka2, hasil);
+            printf("%f dikali dengan %f adalah %f\n", angka1, angka2, hasil);
             break;
 
         case 4:
-            printf("%f dibagi dengan %f adalah %f", angka1, angka2, hasil);
+            printf("%f dibagi dengan %f adalah %f\n", angka1, angka2, hasil);
             break;
             
         default:
@@ -50,6 +50,7 @@ void printHasil(float angka1, float angka2, float hasil, int choice) {
 int main() {
     int choice;
     float angka1, angka2, hasil;
+    char lagi;
 
     printf("Aplikasi Kalkulator\n\n");
 
@@ -87,7 +88,10 @@ int main() {
             }
         
         printHasil(angka1, angka2, hasil, choice);
-    } while (1);
+
+        printf("Apakah ingin menghitung lagi? (y/n): ");
+        scanf(" %c", &lagi);
+    } while (lagi != n);
 
     return 0;
 }
